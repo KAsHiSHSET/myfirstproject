@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gilroy';
+
+}
+html,body{
+    height:100%;
+    width:100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    /* parent agar relative mod mai, taaki children acche se adjust hojaye */
+    position: relative;
+    padding-top:0.1px;
+
+}
+#nav{
+    height: 80px;
+    width:100%;
+    /* background-color: yellow; */
+    margin-top:40px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav h2{
+    /* background-color:red; */
+    /* //navigtion bar ki 100%height leleta hai */
+    height:100%;
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    
+    font-size:26px;
+    font-weight:600
+
+}
+#nav h1{
+    /* background-color:red; */
+    /* //navigtion bar ki 100%height leleta hai */
+    height:100%;
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: monument;
+    letter-spacing: -1px;
+}
+
+#nav h2:nth-last-child(2){
+    /* background-color: red; */
+    width:29%
+ }
+#nav h2:nth-last-child(1){
+   /* background-color: red; */
+   width:10%
+}
+#center{
+    height: 83.5%;
+    width: 100%;
+    /* background-color:red; */
+    /* bug */
+    padding:2%;
+    position: relative;
+
+}
+/* center ke andar hai content */
+#content{
+    height:100%;
+    width:100%;
+    /* background-color:blue; */
+    position: relative;
+}
+#content video{
+height:100%;
+width:100%;
+object-fit: cover;
+}
+#overlay{
+    height:53%;
+    width:95%;
+    position:absolute;
+    bottom:0;
+    /* background-color:rgba(186, 23, 23,0.5); */
+    padding: 1vw;
+    padding-top:4.5vw;
+    color: aliceblue;
+}
+#over1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 2vw; */
+}
+#over1 h1{
+    font-family: monument;
+    font-size:4vw;
+    font-weight: 900;
+    letter-spacing: -1;
+    /* mix-blend-mode: difference; */
+}
+#over2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* for inserting a line */
+    border-top:2px solid white;
+    padding:1vw 0;
+}
+#over2 h4{
+    padding-top:20px ;
+    font-size:2vw;
+}
